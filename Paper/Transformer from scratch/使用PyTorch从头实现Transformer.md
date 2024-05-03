@@ -7,9 +7,9 @@
 ![](figs/1.png)
 
 规范化公式：
- $$
+```math
 Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d_k}})V
- $$
+```
 
 ```python
 class SelfAttention(nn.Module):
