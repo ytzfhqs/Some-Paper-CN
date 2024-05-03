@@ -1,11 +1,5 @@
 # 使用PyTorch从头实现Transformer
 
-## 前言
-
- - 本文使用`Pytorch`从头实现`Transformer`，原论文[Attention is all you need paper](https://arxiv.org/abs/1706.03762)，最佳[解读博客](https://peterbloem.nl/blog/transformers)，学习[视频](https://www.youtube.com/watch?v=U0s0f995w14)
-- GitHub项目地址[Some-Paper-CN](https://github.com/ytzfhqs/Some-Paper-CN)。本项目是译者在学习长时间序列预测、CV、NLP和机器学习过程中精读的一些论文，并对其进行了==中文翻译==。还有==部分最佳示例教程==。
-- 如果有帮助到大家，请帮忙==点亮Star==，也是对译者莫大的鼓励，谢谢啦~
-
 ## SelfAttention
 
  - 整篇论文中，最核心的部分就是`SelfAttention`部分，`SelfAttention`模块架构图如下。
@@ -66,7 +60,7 @@ class SelfAttention(nn.Module):
 ```
 
 - 请注意`values`、` keys`和 `query`的`Linear`层是==不带偏置==的！
-- 上述代码中，较难理解的是`torch.einsum()`，爱因斯坦求和约定，``nqhd,nkhd->nhqk``可以理解为维度是 $ (n,q,h,d) $ 的张量与 $ (n,k,h,d) $ 的张量沿着维度$d$相乘，得到维度 $ (n,q,d,h) $ 重新排列后变成 $ (n,h,q,k) $ 。
+- 上述代码中，较难理解的是`torch.einsum()`，爱因斯坦求和约定，``nqhd,nkhd->nhqk``可以理解为维度是 $(n,q,h,d)$ 的张量与 $ (n,k,h,d) $ 的张量沿着维度$d$相乘，得到维度 $ (n,q,d,h) $ 重新排列后变成 $ (n,h,q,k) $ 。
 - 传入`mask`矩阵是因为每个句子的长度不一样，为了保证维度相同，在长度不足的句子后面使用`padding`补齐，而`padding`是不用计算损失的，所以需要`mask`告诉模型哪些位置需要计算损失。被`mask`遮掩的地方，被赋予无限小的值，这样在`softmax`以后概率就几乎为0了。
 - `mask`这个地方后面也会写到，如果不理解的话，先有这个概念，后面看完代码就会理解了。
 
