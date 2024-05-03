@@ -7,9 +7,9 @@
 ![](figs/1.png)
 
 规范化公式：
-$$
+ $$
 Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d_k}})V
-$$
+ $$
 
 ```python
 class SelfAttention(nn.Module):
@@ -60,7 +60,7 @@ class SelfAttention(nn.Module):
 ```
 
 - 请注意`values`、` keys`和 `query`的`Linear`层是==不带偏置==的！
-- 上述代码中，较难理解的是`torch.einsum()`，爱因斯坦求和约定，``nqhd,nkhd->nhqk``可以理解为维度是 $(n,q,h,d)$ 的张量与 $ (n,k,h,d) $ 的张量沿着维度$d$相乘，得到维度 $ (n,q,d,h) $ 重新排列后变成 $ (n,h,q,k) $ 。
+- 上述代码中，较难理解的是`torch.einsum()`，爱因斯坦求和约定，``nqhd,nkhd->nhqk``可以理解为维度是 $(n,q,h,d)$ 的张量与 $(n,k,h,d)$ 的张量沿着维度$d$相乘，得到维度 $(n,q,d,h)$ 重新排列后变成 $(n,h,q,k)$ 。
 - 传入`mask`矩阵是因为每个句子的长度不一样，为了保证维度相同，在长度不足的句子后面使用`padding`补齐，而`padding`是不用计算损失的，所以需要`mask`告诉模型哪些位置需要计算损失。被`mask`遮掩的地方，被赋予无限小的值，这样在`softmax`以后概率就几乎为0了。
 - `mask`这个地方后面也会写到，如果不理解的话，先有这个概念，后面看完代码就会理解了。
 
