@@ -12,7 +12,7 @@
 | Dish-TS: A General Paradigm for Alleviating Distribution Shift in Time Series Forecasting | [Github](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Paper/Dish-TS) | [CSDN](http://t.csdnimg.cn/hh8H2) | [使用示例](http://t.csdnimg.cn/Nr2OU) |
 | Revisiting Long-term Time Series Forecasting: An Investigation on Linear Mapping | [Github](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Paper/Revisiting%20Long-term%20Time%20Series%20Forecasting) | [CSDN](http://t.csdnimg.cn/wJux4) |                   -                   |
 | TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis | [Github](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Paper/TimesNet) | [CSDN](http://t.csdnimg.cn/1wf0W) | [代码解析](http://t.csdnimg.cn/leWNv) |
-| Chronos: Learning the Language of Time Series         | [Github](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Paper/Chronos) | [CSDN](http://t.csdnimg.cn/o5j9l) | -    |
+| Chronos: Learning the Language of Time Series         | [Github](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Paper/Chronos) | [CSDN](http://t.csdnimg.cn/o5j9l) | [代码解析](http://t.csdnimg.cn/fDLxt)<br/>[微调代码解析](http://t.csdnimg.cn/gbvjE) |
 | PatchMixer: A Patch-Mixing Architecture for Long-Term Time Series Forecasting  | [Github](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Paper/PatchMixer) | [CSDN](http://t.csdnimg.cn/3N0yq) | -    |
 
 # 计算机视觉（CV）
