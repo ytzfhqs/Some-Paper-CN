@@ -32,6 +32,12 @@
 | Phinetuning 2.0                     | [Github](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Blog/Phinetuning%202.0) | -                                 | [使用示例](http://t.csdnimg.cn/WTQzS) |
 | Finetuning LLMs with LoRA and QLoRA | [Github](http://t.csdnimg.cn/ipxGi)                          | [CSDN](http://t.csdnimg.cn/FB3Hr) | -                                     |
 
+# 深度学习
+
+| 论文/博客标题                       | 项目页                                                       | CSDN博客                          | 教程                                  |
+| :-----------------------------------: | :------------------------------------------------------------: | :---------------------------------: | :-------------------------------------: |
+| Surge Phenomenon in Optimal Learning Rate and Batch Size Scaling | [Github]([http://t.csdnimg.cn/ipxGi](https://github.com/ytzfhqs/Some-Paper-CN/tree/main/Paper/Surge%20Phenomenon%20in%20Optimal%20Learning%20Rate%20and%20Batch%20Size%20Scaling))                          | [CSDN](http://t.csdnimg.cn/hzr97) | -                                     |
+| Learning Rates as a Function of Batch Size |                         | | -                                     |
 # 机器学习
 
 | 论文/博客标题                                                | 项目页                                                       | CSDN博客                          | 教程                                  |
